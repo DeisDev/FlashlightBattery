@@ -90,12 +90,12 @@ if SERVER then
                         ply:SetNWFloat(NW_BATTERY, battery)
                     end
 
-                    -- If reached 0, force OFF and start cooldown
+                    -- If reached 0, force OFF and start cooldown (but don't reset if already cooling)
                     if battery <= 0 then
                         if ply:FlashlightIsOn() then
                             ply:Flashlight(false)
                         end
-                        if cooldownDur > 0 then
+                        if cooldownDur > 0 and not cooling then
                             ply:SetNWBool(NW_COOLDOWN, true)
                             ply:SetNWFloat(NW_COOLDOWN_END, now + cooldownDur)
                         end

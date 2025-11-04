@@ -45,21 +45,21 @@ if CLIENT then
         draw.SimpleText(label, "DermaDefaultBold", x, y, color, TEXT_ALIGN_RIGHT, TEXT_ALIGN_BOTTOM)
     end)
 
-    -- Spawnmenu: Settings tab and config panel
-    -- Add a top-level tab called "settings" (if it already exists, this is harmless)
+    -- Spawnmenu: Options tab and config panel
+    -- Add a top-level tab called "Options" (if it already exists, this is harmless)
     hook.Add("AddToolMenuTabs", "FB_AddSettingsTab", function()
-        spawnmenu.AddToolTab("settings", "Settings", "icon16/wrench.png")
+        spawnmenu.AddToolTab("Options", "Options", "icon16/wrench.png")
     end)
 
-    -- Add category inside the "settings" tab
+    -- Add category inside the "Options" tab
     hook.Add("AddToolMenuCategories", "FB_AddSettingsCategories", function()
-        spawnmenu.AddToolCategory("settings", "FlashlightBattery", "Flashlight Battery")
+        spawnmenu.AddToolCategory("Options", "FlashlightBattery", "Flashlight Battery")
     end)
 
     -- Populate the settings category with our control panel
     hook.Add("PopulateToolMenu", "FB_PopulateSettings", function()
         spawnmenu.AddToolMenuOption(
-            "settings",                -- tab
+            "Options",                 -- tab
             "FlashlightBattery",       -- category
             "FB_SettingsPanel",        -- internal name
             "settings",                -- displayed name in category
