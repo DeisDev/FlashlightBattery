@@ -1,0 +1,11 @@
+{
+  "title": "Flashlight Battery",
+  "type": "effects",
+  "tags": ["realism", "fun"],
+  "ignore": [
+    "*.psd",
+    "*.md",
+    "*.vcproj",
+    "*.svn*"
+  ]
+}
