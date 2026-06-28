@@ -3,7 +3,7 @@ local pendingSettings = {}
 
 local links = {
     repository = "https://github.com/DeisDev/FlashlightBattery",
-    issue = "https://github.com/DeisDev/FlashlightBattery/issues/new?template=flashlight_compatibility.md",
+    issue = "https://github.com/DeisDev/FlashlightBattery/issues/new?template=flashlight_compatibility.yml",
     workshop = "https://steamcommunity.com/sharedfiles/filedetails/comments/3599388816",
     moreAddons = "https://steamcommunity.com/workshop/filedetails/?id=3551812511",
     author = "https://steamcommunity.com/profiles/76561199216202475"

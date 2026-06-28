@@ -1,0 +1,57 @@
+name: Flashlight addon compatibility
+description: Request support for another flashlight addon
+title: "Compatibility request: "
+labels:
+  - compatibility
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve Flashlight Battery compatibility.
+        Please link the flashlight addon and describe what is not working.
+
+  - type: input
+    id: addon_link
+    attributes:
+      label: Flashlight addon link
+      description: Link the Workshop page, GitHub repo, or download page.
+      placeholder: "https://steamcommunity.com/sharedfiles/filedetails/?id=..."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: broken_behavior
+    attributes:
+      label: What is not working?
+      options:
+        - label: Battery does not drain.
+        - label: Flashlight is not blocked when empty.
+        - label: HUD does not show the right state.
+        - label: Cooldown or recharge behaves incorrectly.
+        - label: Something else.
+    validations:
+      required: true
+
+  - type: textarea
+    id: details
+    attributes:
+      label: Details
+      description: Describe what happens and what you expected to happen.
+      placeholder: "Example: The custom flashlight turns on, but the battery stays at 100%."
+    validations:
+      required: true
+
+  - type: textarea
+    id: settings
+    attributes:
+      label: Flashlight Battery settings
+      description: List any settings you changed, or write "default".
+      placeholder: "default"
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Extra notes
+      description: Add anything else that might help reproduce the issue.
