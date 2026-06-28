@@ -7,6 +7,7 @@ local sharedFiles = {
 
 local clientFiles = {
     "flashlight_battery/cl_convars.lua",
+    "flashlight_battery/cl_compat.lua",
     "flashlight_battery/cl_hud.lua",
     "flashlight_battery/cl_menu.lua"
 }
@@ -14,6 +15,7 @@ local clientFiles = {
 local serverFiles = {
     "flashlight_battery/sv_convars.lua",
     "flashlight_battery/sv_network.lua",
+    "flashlight_battery/sv_compat.lua",
     "flashlight_battery/sv_battery.lua",
     "flashlight_battery/sv_pickups.lua"
 }

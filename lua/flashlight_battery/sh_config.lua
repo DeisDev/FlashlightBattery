@@ -1,7 +1,9 @@
 FlashlightBattery = FlashlightBattery or {}
 
-FlashlightBattery.Version = "1.1.0"
+FlashlightBattery.Version = "1.1.1"
 FlashlightBattery.NetSetConVar = "FB_SetConVar"
+FlashlightBattery.NetClientFlashlightState = "FB_ClientFlashlightState"
+FlashlightBattery.NetForceClientFlashlightOff = "FB_ForceClientFlashlightOff"
 FlashlightBattery.HudVisibleBatteryThreshold = 99.5
 
 FlashlightBattery.NW = {
