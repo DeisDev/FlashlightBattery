@@ -1,0 +1,12 @@
+ENT.Type = "anim"
+ENT.Base = "base_anim"
+ENT.PrintName = "Flashlight Battery Pickup"
+ENT.Category = "Flashlight Battery"
+ENT.Spawnable = true
+ENT.AdminOnly = false
+ENT.RenderGroup = RENDERGROUP_TRANSLUCENT
+ENT.Model = "models/items/car_battery01.mdl"
+ENT.IconOverride = "spawnicons/models/items/car_battery01.png"
+ENT.FB_RefillMode = "configured"
+ENT.FB_LabelText = "Flashlight Battery"
+ENT.FB_TintColor = Color(255, 255, 255)
